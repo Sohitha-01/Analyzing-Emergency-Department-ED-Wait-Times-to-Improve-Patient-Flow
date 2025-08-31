@@ -8,32 +8,15 @@ The objective is to prepare a reliable dataset, uncover patterns affecting patie
 ---
 
 ## 📑 Table of Contents
-- [🎯 Project Overview](#-project-Overview)
-- [📊 Data](#-data)
 - [📂 Repo Structure](#-repo-structure)
+- [🎯 Project Golas](#-project-Goals)
+- [📊 Data](#-data)
 - [⚡ Quick Start](#-quick-start)
 - [🧹 Data Cleaning](#-data-cleaning)
 - [🔎 Exploratory Data Analysis](#-exploratory-data-analysis)
 - [🗄️ SQL Analytics](#️-sql-analytics)
 - [📌 Results](#-results)
 - [📜 License](#-license)
-
----
-
-## 🎯 Project Goals
-- Analyze **ED wait times** and admission trends.  
-- Identify **patterns in demographics, departments, and wait times**.  
-- Build a reproducible pipeline for:  
-  1. Data Cleaning (Python + SQL)  
-  2. Exploratory Data Analysis (Python)  
-  3. SQL Queries (aggregates, KPIs, trends)  
-
----
-
-## 📊 Data
-- **Source**: [Kaggle Dataset](https://www.kaggle.com/)  
-- **Raw dataset**: `Hospital ER_Data.csv`  
-- **Cleaned dataset**: `er_clean.csv`  
 
 ---
 
@@ -62,7 +45,23 @@ Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/
 ├─ requirements.txt
 └─ README.md
 ```
+---
 
+## 🎯 Project Goals
+- Analyze **ED wait times** and admission trends.  
+- Identify **patterns in demographics, departments, and wait times**.  
+- Build a reproducible pipeline for:  
+  1. Data Cleaning (Python + SQL)  
+  2. Exploratory Data Analysis (Python)  
+  3. SQL Queries (aggregates, KPIs, trends)  
+
+---
+
+## 📊 Data
+- **Source**: [Kaggle Dataset](https://www.kaggle.com/)  
+- **Raw dataset**: `Hospital ER_Data.csv`  
+- **Cleaned dataset**: `er_clean.csv`
+- 
 ---
 
 ## ⚡ Quick Start
