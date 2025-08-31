@@ -1,17 +1,14 @@
 # 🏥 Analyzing Emergency Department (ED) Wait Times to Improve Patient Flow
 
-**Author:** Sohitha Kommineni  
-**License:** MIT  
+## 📝 Project Overview
+Comprehensive analysis of emergency department (ED) wait times through data cleaning, exploratory data analysis (EDA), and SQL-based performance evaluation.  
 
-> This project focuses on **data cleaning, exploratory data analysis (EDA), and SQL analytics** for emergency department (ED) wait times.  
-> The analysis uses a synthetic/open dataset sourced from **Kaggle** (`Hospital ER_Data.csv`) and produces a cleaned dataset (`er_clean.csv`) along with SQL-based performance metrics.  
-
-📄 **Full Report (PDF):** [ED_Wait_Times.pdf](https://github.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/blob/2896d5135fd728899393598ae638504c5975dcde/Report/ED_Wait_Times.pdf)  
+The objective is to prepare a reliable dataset, uncover patterns affecting patient flow, and generate performance metrics that highlight departmental efficiency and bottlenecks. 
 
 ---
 
 ## 📑 Table of Contents
-- [🎯 Project Goals](#-project-goals)
+- [🎯 Project Overview](#-project-Overview)
 - [📊 Data](#-data)
 - [📂 Repo Structure](#-repo-structure)
 - [⚡ Quick Start](#-quick-start)
@@ -135,7 +132,8 @@ SQL scripts mirror the analysis pipeline:
 - 🚑 Most ED visits are concentrated during **weekday daytime hours**.  
 - 🕒 Average wait times vary significantly by department.  
 - 🏥 **Admission flag** and **wait times** are correlated (non-admitted patients wait longer).  
-- 📉 Patient satisfaction decreases with higher wait times.  
+- 📉 Patient satisfaction decreases with higher wait times.
+- 📄 **Full Report (PDF):** [ED_Wait_Times.pdf](https://github.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/blob/2896d5135fd728899393598ae638504c5975dcde/Report/ED_Wait_Times.pdf) 
 
 ---
 
