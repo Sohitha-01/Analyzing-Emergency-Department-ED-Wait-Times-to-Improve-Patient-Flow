@@ -156,4 +156,4 @@ SQL scripts mirror the analysis pipeline:
 ---
 
 ## 📜 License
-MIT © 2025 Sohitha Kommineni
+This project is open-source and licensed under MIT – feel free to use it.
