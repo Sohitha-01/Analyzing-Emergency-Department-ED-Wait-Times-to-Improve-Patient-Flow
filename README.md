@@ -14,6 +14,7 @@ The objective is to prepare a reliable dataset, uncover patterns affecting patie
 - [⚡ Quick Start](#-quick-start)
 - [🧹 Data Cleaning](#-data-cleaning)
 - [🔎 Exploratory Data Analysis](#-exploratory-data-analysis)
+- [📊 Visualizations](#-Visualizations)
 - [🗄️ SQL Analytics](#️-sql-analytics)
 - [📌 Results](#-results)
 - [📜 License](#-license)
@@ -95,22 +96,40 @@ python src/eda_report.py --in Data/er_clean.csv --out Images/
 
 ---
 
-## 🔎 Exploratory Data Analysis
+## 🔍 Exploratory Data Analysis (EDA)
+Exploratory Data Analysis was performed to understand the distribution, variability, and relationships within the emergency department (ED) dataset.  
+The analysis focused on the following aspects:
 
-### Age Distribution
-![Age Distribution](https://github.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/blob/main/Images/age_distribution.png?raw=true)  
+- **Distribution of Wait Times**: Visualized using histograms and density plots to observe patterns in patient waiting behavior.  
+- **Categorical Analysis**: Bar charts and count plots were used to examine patient volumes across age groups, departments, and admission types.  
+- **Outlier Detection**: Boxplots highlighted extreme values in wait times, helping to identify anomalies.  
+- **Trend Analysis**: Line plots captured variations in waiting times over different time intervals (hours, days, etc.).  
+- **Correlation Analysis**: A heatmap and pairplots revealed relationships between wait times and other numerical features, providing insight into potential influencing factors.  
 
-### Gender Distribution
-![Gender Distribution](https://github.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/blob/main/Images/gender_distribution.png?raw=true)  
+These findings formed the basis for identifying bottlenecks in patient flow and guided the SQL-based performance evaluation.
 
-### Race Distribution
-![Race Distribution](https://github.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/blob/main/Images/race_distribution.png?raw=true)  
+---
 
-### Wait Time Distribution
-![Waittime Distribution](https://github.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/blob/main/Images/waittime_distribution.png?raw=true)  
+## 📊 Visualizations
+Below are the key plots generated during the analysis. Click the links to view each visualization:
 
-### Avg Wait Time by Department
-![Wait by Department](https://github.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/blob/main/Images/avg_wait_by_department.png?raw=true)  
+### Wait Time Distributions
+[Wait Time Distribution](https://raw.githubusercontent.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/5b47c441ea89e8e9226cb120fc3df2caea41c10a/Images/Screenshot%202025-08-30%20235559.png)    [Patient Count by Category](https://raw.githubusercontent.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/5b47c441ea89e8e9226cb120fc3df2caea41c10a/Images/Screenshot%202025-08-30%20235614.png)    [Admissions by Department](https://raw.githubusercontent.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/5b47c441ea89e8e9226cb120fc3df2caea41c10a/Images/Screenshot%202025-08-30%20235640.png)    [Discharge Types](https://raw.githubusercontent.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/5b47c441ea89e8e9226cb120fc3df2caea41c10a/Images/Screenshot%202025-08-30%20235659.png)  
+
+### Wait Times by Categories
+[Wait Time by Admission Type](https://raw.githubusercontent.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/5b47c441ea89e8e9226cb120fc3df2caea41c10a/Images/Screenshot%202025-08-30%20235711.png)     [Wait Time by Patient Type](https://raw.githubusercontent.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/5b47c441ea89e8e9226cb120fc3df2caea41c10a/Images/Screenshot%202025-08-30%20235722.png)  
+
+### Outlier Detection (Boxplots)
+[Boxplot of Wait Times (Overall)](https://raw.githubusercontent.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/5b47c441ea89e8e9226cb120fc3df2caea41c10a/Images/Screenshot%202025-08-30%20235733.png)    [Boxplot by Department](https://raw.githubusercontent.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/5b47c441ea89e8e9226cb120fc3df2caea41c10a/Images/Screenshot%202025-08-30%20235753.png)    [Boxplot by Admission Type](https://raw.githubusercontent.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/5b47c441ea89e8e9226cb120fc3df2caea41c10a/Images/Screenshot%202025-08-30%20235805.png)  
+
+### Performance Metrics
+[Average Wait Times by Department](https://raw.githubusercontent.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/5b47c441ea89e8e9226cb120fc3df2caea41c10a/Images/Screenshot%202025-08-30%20235840.png)    [Average Wait Times by Admission Type](https://raw.githubusercontent.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/5b47c441ea89e8e9226cb120fc3df2caea41c10a/Images/Screenshot%202025-08-30%20235855.png)  
+
+### Trends Over Time
+[Wait Time Trends Over Time](https://raw.githubusercontent.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/5b47c441ea89e8e9226cb120fc3df2caea41c10a/Images/Screenshot%202025-08-30%20235910.png)  
+
+### Correlation & Statistics
+[Correlation Heatmap](https://raw.githubusercontent.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/5b47c441ea89e8e9226cb120fc3df2caea41c10a/Images/Screenshot%202025-08-30%20235927.png)     [Correlation Matrix Plot](https://raw.githubusercontent.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/5b47c441ea89e8e9226cb120fc3df2caea41c10a/Images/Screenshot%202025-08-30%20235953.png)    [Outlier Detection](https://raw.githubusercontent.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/5b47c441ea89e8e9226cb120fc3df2caea41c10a/Images/Screenshot%202025-08-31%20000008.png)    [Summary Statistics Plot](https://raw.githubusercontent.com/Sohitha-01/Analyzing-Emergency-Department-ED-Wait-Times-to-Improve-Patient-Flow/5b47c441ea89e8e9226cb120fc3df2caea41c10a/Images/Screenshot%202025-08-31%20000022.png)  
 
 ---
 
